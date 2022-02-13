@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: hsl(225, 100%, 94%);
+}
+
+#bg {
+    position: absolute;
+    min-width: 100%;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+}
+.card {
+    max-width: 25em;
+    background-color: white;
+    border-radius: 1em;
+    text-align: center;
+}
+#mainImg {
+    border-radius: 1em 1em 0 0;
+    max-width: 100%;
+}
+.content {
+    padding: 1em 2em 2em 2em;
+}
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+}
+p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+.pricing {
+    background: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 0.5em;
+    margin: 1em;
+}
+.pricing p {
+    font-weight: 700;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+button {
+    background-color: hsl(245, 75%, 52%);
+    padding: 1em 7em;
+    border-radius: 0.5em;
+    color: white;
+    cursor: pointer;
+    display: block;
+    border: none;
+    font-family: "Red Hat Display", sans-serif;
+
+    margin: 1em 0;
+}
+footer a {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
