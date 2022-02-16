@@ -6,15 +6,17 @@ body {
     justify-content: center;
     align-items: center;
     background: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: cover;
 }
 
-#bg {
+/* #bg {
     position: absolute;
-    min-width: 100%;
+    width: 100%;
     z-index: -1;
     left: 0px;
     top: 0px;
-}
+} */
 .card {
     max-width: 25em;
     background-color: white;
