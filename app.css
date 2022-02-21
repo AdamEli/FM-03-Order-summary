@@ -7,24 +7,18 @@ body {
     align-items: center;
     background: hsl(225, 100%, 94%);
     background-image: url(images/pattern-background-desktop.svg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center top;
+    background-size: 100%;
+    background-position: top left;
     background-repeat: no-repeat;
 }
 
-/* #bg {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    left: 0px;
-    top: 0px;
-} */
 .card {
     max-width: 25em;
     background-color: white;
     border-radius: 1em;
     text-align: center;
+    margin: 1em;
+    /* box-shadow: 0 8px hsla(224, 23%, 55%, 0.007); */
 }
 #mainImg {
     border-radius: 1em 1em 0 0;
@@ -36,6 +30,7 @@ body {
 h1 {
     font-size: 25px;
     font-weight: 900;
+    color: hsl(223, 47%, 23%);
 }
 p {
     font-size: 16px;
@@ -45,19 +40,36 @@ p {
 .pricing {
     background: hsl(225, 100%, 98%);
     display: flex;
-    justify-content: left;
+    /* justify-content: space-between; */
     align-items: center;
+    padding: 1em 1.5em;
     border-radius: 0.5em;
     margin: 1em;
 }
-.pricing p {
+.pricing a {
     font-weight: 700;
+    justify-self: flex-end;
+    margin-left: 2.5em;
 }
+.pricing p {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin: 0 0 0.3em 0;
+}
+.pricing span {
+    color: hsl(224, 23%, 55%);
+}
+.vertical {
+    margin-left: 1em;
+    align-self: flex-start;
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    font-weight: 900;
 }
 button {
     background-color: hsl(245, 75%, 52%);
@@ -68,16 +80,19 @@ button {
     display: block;
     border: none;
     font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
 
-    margin: 1em 0;
+    margin: 1em 0 2em 0;
 }
 footer a {
     color: hsl(224, 23%, 55%);
     text-decoration: none;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 750px) {
     body {
         background-image: url(images/pattern-background-mobile.svg);
-        background-size: cover;
+        background-size: 100%;
+        background-position: top left;
+        background-repeat: no-repeat;
     }
 }
