@@ -10,14 +10,16 @@ body {
     background-size: 100%;
     background-position: top left;
     background-repeat: no-repeat;
+    /* padding: 1em; */
 }
 
 .card {
+    box-sizing: border-box;
     max-width: 25em;
     background-color: white;
     border-radius: 1em;
     text-align: center;
-    margin: 1em;
+
     /* box-shadow: 0 8px hsla(224, 23%, 55%, 0.007); */
 }
 #mainImg {
@@ -40,7 +42,6 @@ p {
 .pricing {
     background: hsl(225, 100%, 98%);
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     padding: 1em 1.5em;
     border-radius: 0.5em;
@@ -50,6 +51,12 @@ p {
     font-weight: 700;
     justify-self: flex-end;
     margin-left: 2.5em;
+    transition: color 0.2s linear;
+    transition: text-decoration 0.2s linear;
+}
+.pricing a:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.719);
 }
 .pricing p {
     font-weight: 900;
@@ -69,30 +76,48 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-weight: 900;
 }
 button {
     background-color: hsl(245, 75%, 52%);
-    padding: 1em 7em;
+    padding: 1em 0;
+    display: block;
+    width: 100%;
     border-radius: 0.5em;
     color: white;
     cursor: pointer;
-    display: block;
     border: none;
     font-family: "Red Hat Display", sans-serif;
     font-weight: 700;
-
-    margin: 1em 0 2em 0;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    transition: background-color 0.2s linear;
 }
-footer a {
+button:hover {
+    background-color: hsla(245, 75%, 52%, 0.719);
+}
+.cancel {
     color: hsl(224, 23%, 55%);
     text-decoration: none;
+    font-weight: 900;
+
+    transition: color 0.2s linear;
 }
+.cancel:hover {
+    color: black;
+}
+/* .attribution {
+    margin-top: 1em;
+} */
 @media screen and (max-width: 750px) {
     body {
         background-image: url(images/pattern-background-mobile.svg);
         background-size: 100%;
         background-position: top left;
         background-repeat: no-repeat;
+    }
+    .card {
+        max-width: 25em;
     }
 }
