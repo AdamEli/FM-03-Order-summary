@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: "Red Hat Display", sans-serif;
@@ -14,8 +17,8 @@ body {
 }
 
 .card {
-    box-sizing: border-box;
-    max-width: 55%;
+    max-width: 100%;
+    width: 28rem;
     background-color: white;
     border-radius: 1em;
     text-align: center;
@@ -27,7 +30,7 @@ body {
     max-width: 100%;
 }
 .content {
-    padding: 1em 3em 2em 3em;
+    padding: 1em 10% 2em 10%;
 }
 h1 {
     font-size: 25px;
@@ -109,7 +112,7 @@ button:hover {
         background-position: top left;
         background-repeat: no-repeat;
     }
-    .card {
+    /* .card {
         max-width: 95%;
-    }
+    } */
 }
