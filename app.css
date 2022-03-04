@@ -17,8 +17,7 @@ body {
 }
 
 .card {
-    max-width: 100%;
-    width: 28rem;
+    max-width: 28rem;
     background-color: white;
     border-radius: 1em;
     text-align: center;
@@ -46,13 +45,14 @@ p {
     background: hsl(225, 100%, 98%);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 1em 1.5em;
     border-radius: 0.5em;
+    width: 100%;
 }
 .pricing a {
     font-weight: 700;
     justify-self: flex-end;
-    margin-left: 25%;
     transition: color 0.2s linear;
     transition: text-decoration 0.2s linear;
 }
@@ -63,14 +63,14 @@ p {
 .pricing p {
     font-weight: 900;
     color: hsl(223, 47%, 23%);
-    margin: 0 0 0.3em 0;
+    margin: 0 0 0 0;
 }
 .pricing span {
     color: hsl(224, 23%, 55%);
 }
 .vertical {
-    margin-left: 1em;
-    align-self: flex-start;
+    flex-grow: 1;
+    text-align: left;
 }
 
 button {
