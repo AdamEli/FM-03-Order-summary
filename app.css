@@ -13,7 +13,7 @@ body {
     background-size: 100%;
     background-position: top left;
     background-repeat: no-repeat;
-    /* padding: 1em; */
+    padding: 1em;
 }
 
 .card {
@@ -49,6 +49,7 @@ p {
     padding: 1em 1.5em;
     border-radius: 0.5em;
     width: 100%;
+    gap: 5%;
 }
 .pricing a {
     font-weight: 700;
@@ -63,7 +64,6 @@ p {
 .pricing p {
     font-weight: 900;
     color: hsl(223, 47%, 23%);
-    margin: 0 0 0 0;
 }
 .pricing span {
     color: hsl(224, 23%, 55%);
